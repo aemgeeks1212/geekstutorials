@@ -1,0 +1,39 @@
+<!-- Page Wrapper -->
+
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Please wait...</p>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+    <sly data-sly-resource="${@path='topbar', resourceType='geekstutorials/components/global/topbar'}"></sly>
+    <section>
+		<sly data-sly-resource="${@path='leftnav', resourceType='geekstutorials/components/global/leftsidenav'}"></sly>
+		<sly data-sly-resource="${@path='rightnav', resourceType='geekstutorials/components/global/rightsidenav'}"></sly>
+    </section>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="block-header">
+                <h2>
+					<sly data-sly-resource="${@path='title', resourceType='geekstutorials/components/title'}"></sly>
+                </h2>
+            </div>
+            <div class="row clearfix">
+				<sly data-sly-resource="${@path='parsys', resourceType='wcm/foundation/components/parsys'}"></sly>
+            </div>
+        </div>
+    </section>
+
+

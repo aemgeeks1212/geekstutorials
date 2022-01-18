@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/geekstutorials/clientlibs"/>
+    <filter root="/apps/geekstutorials/components"/>
+    <filter root="/apps/geekstutorials/i18n"/>
+	<filter root="/apps/geekstutorials/templates"/>
+    <filter root="/apps/msm/geekstutorials_blueprint" mode="merge"/>
+</workspaceFilter>

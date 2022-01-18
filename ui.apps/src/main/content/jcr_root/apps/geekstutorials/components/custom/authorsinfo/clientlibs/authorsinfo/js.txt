@@ -1,0 +1,4 @@
+#base=js
+jquery-dataTables.js
+dataTables-bootstrap.js
+jquery-geekstable.js

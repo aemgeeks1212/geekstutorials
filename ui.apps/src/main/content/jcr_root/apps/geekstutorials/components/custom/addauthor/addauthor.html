@@ -1,0 +1,88 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+     <sly data-sly-call="${clientlib.all @ categories='geekstutorials.components.addauthor'}"/>
+</sly>
+                    <!-- Vertical Layout -->
+                    <div class="row clearfix">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="card">
+                                <div class="header text-center">
+                                    <h2>
+                                        Add new Author
+                                    </h2>
+                                </div>
+                                <div class="body" data-sly-use.formModel="com.geeks.aem.tutorials.core.models.AddAuthor">
+                                    <form class="user" method="POST" enctype="multipart/form-data" action="${formModel.actionType}">
+                                        <div class="row clearfix">
+                                            <div class="col-sm-6">
+                                                <div class="form-group form-float form-group-lg">
+                                                    <div class="form-line">
+                                                        <input type="text" name="fname" class="form-control" />
+                                                        <label class="form-label">First Name</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group form-float form-group-lg">
+                                                    <div class="form-line">
+                                                        <input type="text" name="lname" class="form-control" />
+                                                        <label class="form-label">Last Name</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="form-group form-float form-group-lg">
+                                                    <div class="form-line">
+                                                        <input type="text" name="phone" class="form-control" />
+                                                        <label class="form-label">Phone</label>
+                                                    </div>
+                                                </div>
+                                            </div>                                              
+                                            <div class="col-sm-12">
+                                                <div class="form-group form-float form-group-lg">
+                                                    <div class="form-line">
+                                                        <input type="text" name="email" class="form-control" />
+                                                        <label class="form-label">Email Address</label>
+                                                    </div>
+                                                </div>
+                                            </div>                                          
+                                            <div class="col-sm-12">
+                                                <div class="form-group demo-tagsinput-area form-group-lg">
+                                                    <div class="form-line">
+                                                        <input type="text" name="books" class="form-control" data-role="tagsinput" value="">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-sm-12">
+                                            <div id="frmFileUpload" class="dropzone">
+                                                <div class="dz-message">
+                                                    <div class="drag-icon-cph">
+                                                        <i class="material-icons">touch_app</i>
+                                                    </div>
+                                                    <h3>Authors Thumbnail.</h3>
+                                                </div>
+                                                <div class="fallback">
+                                                    <input name="file" type="file" multiple />
+                                                </div>
+                                            </div>
+                                        </div>
+
+										<hr>
+                                        <button type="submit" class="btn btn-primary">
+                                            Register Account
+                                        </button>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- #END# Vertical Layout -->
+
+
+
+
+
