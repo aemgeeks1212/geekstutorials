@@ -122,12 +122,9 @@ public class AuthorServiceImpl implements AuthorService {
 
     @Override
     public Resource getAuthorDetails(final String country,final String author) {
-        LOG.info("\n -------- getAuthorDetails----------- ");
         AuthorServiceConfig config = authorServiceConfig.getCountryConfig(country);
-        LOG.info("\n --------CONFIG---------- {} ",config.getCountryCode());
         String nodeLocation = config.getNodePath() + "/" + config.getNodeName();
         try {
-            LOG.info("\n ---nodeLocation---> {} ",nodeLocation);
             ResourceResolver resolverResolver = ResolverUtil.newResolver(resourceResolverFactory);
             LOG.info("\n ---resolver HIT ---> " + resolverResolver.getUserID());
             Resource authorDetails=resolverResolver.getResource(nodeLocation+"/"+author);

@@ -27,7 +27,6 @@ public class ResolverUtil {
         final Map<String, Object> paramMap = new HashMap<String, Object>();
         paramMap.put( ResourceResolverFactory.SUBSERVICE, GEEKS_TUTORIALS_SERVICE_USER );
         ResourceResolver resolver = resourceResolverFactory.getServiceResourceResolver(paramMap);
-        // fetches the admin service resolver using service user.
         return resolver;
     }
     
