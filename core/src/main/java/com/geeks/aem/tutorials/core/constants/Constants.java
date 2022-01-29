@@ -24,6 +24,7 @@ public final class Constants {
     public static final String ADDAUTHOR_SELECTORS=  "addauthor";
     public final static String ADDAUTHOR_RESOURCE_TYPE="geekstutorials/components/custom/addauthor";
     public static final String AUTHORNODE_TYPE= "nt:unstructured";
+    public static final String ADDAUTHOR_EXTENSION= "json";
 
     private Constants() {
     }

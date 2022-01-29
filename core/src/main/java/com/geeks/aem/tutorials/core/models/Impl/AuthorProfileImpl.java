@@ -79,7 +79,7 @@ public class AuthorProfileImpl implements AuthorProfile {
 
     @PostConstruct
     protected void init(){
-        LOG.info("\n ----------------IN MODEL----------------");
+/*        LOG.info("\n ----------------IN MODEL----------------");
         String country=currentPage.getPath().split("/")[3];
         String authorPath=request.getRequestParameter("author").getString();
         Resource author=authorService.getAuthorDetails(country,authorPath);
@@ -89,7 +89,7 @@ public class AuthorProfileImpl implements AuthorProfile {
         email=authorMap.get("email",String.class);
         phone=authorMap.get("phone",String.class);
         books= Arrays.asList(authorMap.get("books",String[].class));
-        LOG.info("\n Resource Path - {} : {} ",author.getPath(),books.size());
+        LOG.info("\n Resource Path - {} : {} ",author.getPath(),books.size());*/
 
 
     }

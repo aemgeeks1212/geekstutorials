@@ -43,12 +43,12 @@ public class AuthorsInfoImpl implements AuthorsInfo {
 
     private String country;
 
-    @Override
+/*    @Override
     public List<Map<String, String>> getAuthorsList() {
         List<Map<String, String>> authos=authorService.getAuthors(country);
         LOG.info("\n SIZE - {} ",authos.size());
         return authos;
-    }
+    }*/
 
     @PostConstruct
     protected void init() throws LoginException {

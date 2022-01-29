@@ -41,7 +41,6 @@ public class AddAuthorImpl implements AddAuthor {
 
     @PostConstruct
     protected void init() throws LoginException {
-       LOG.info("\n Resource Path - {} ",resource.getPath());
         actionType=utilService.getActionURL(resource);
     }
 }

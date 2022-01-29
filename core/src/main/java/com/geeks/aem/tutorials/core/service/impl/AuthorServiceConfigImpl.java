@@ -32,12 +32,10 @@ public class AuthorServiceConfigImpl implements AuthorServiceConfig {
         jsonPath = config.jsonPath();
         authorsNodeName = config.authorsNode();
         authorsNodePath = config.authorsPath();
-        LOG.info("\n jsonName - {} ", jsonName);
     }
 
-    @Reference(service = AuthorServiceConfig.class, cardinality = ReferenceCardinality.MULTIPLE, policy = ReferencePolicy.STATIC,unbind = "unbindAuthorServiceConfig")
+    @Reference(service = AuthorServiceConfig.class, cardinality = ReferenceCardinality.MULTIPLE, policy = ReferencePolicy.DYNAMIC)
     public void bindAuthorServiceConfig(final AuthorServiceConfig config) {
-        LOG.info("\n ----ADDING CONFIGURATION-----");
         if (configs == null) {
             configs = new ArrayList<>();
         }
@@ -45,8 +43,7 @@ public class AuthorServiceConfigImpl implements AuthorServiceConfig {
 
     }
 
-    public void unbindAuthorServiceConfig(final CountriesConfig config) {
-        LOG.info("\n ----REMOVING CONFIGURATION-----");
+    public void unbindAuthorServiceConfig(final AuthorServiceConfig config) {
         configs.remove(config);
     }
 
@@ -82,11 +79,8 @@ public class AuthorServiceConfigImpl implements AuthorServiceConfig {
 
     @Override
     public AuthorServiceConfig getCountryConfig(String countryCode) {
-        LOG.info("\n CONFIG SIZE -  {} : {} ",countryCode,configs.size());
         for (AuthorServiceConfig confFact : configs) {
-            LOG.info("\n  COUNTRY - {} - {} ", countryCode, confFact.getCountryCode());
             if (StringUtils.equalsIgnoreCase(countryCode, confFact.getCountryCode())) {
-                LOG.info("\n  RETURNING - {} ", confFact.getNodeName());
                 return confFact;
             }
         }
