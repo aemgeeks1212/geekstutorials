@@ -2,14 +2,13 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        pageTitle="Geeks Tutorials"
-        jcr:primaryType="cq:PageContent"
-        jcr:title="en"
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
         cq:template="/conf/geekstutorials/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="en"
         sling:resourceType="geekstutorials/components/page"
-    >
+        pageTitle="Geeks Tutorials">
         <root
             jcr:primaryType="nt:unstructured"
             sling:resourceType="geekstutorials/components/container"
@@ -80,4 +79,8 @@
             </container>
         </root>
     </jcr:content>
+    <home/>
+    <add-authors/>
+    <all-authors/>
+    <author-profile/>
 </jcr:root>

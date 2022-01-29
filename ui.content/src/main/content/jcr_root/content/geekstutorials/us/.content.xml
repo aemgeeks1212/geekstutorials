@@ -1,11 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
+        cq:lastModified="{Date}2022-01-26T12:44:53.530-05:00"
+        cq:lastModifiedBy="admin"
+        cq:lastRolledout="{Date}2022-01-26T12:44:53.538-05:00"
+        cq:lastRolledoutBy="admin"
         cq:redirectTarget="/content/geekstutorials/us/en"
+        cq:siteOwner="admin"
         cq:template="/conf/geekstutorials/settings/wcm/templates/page-content"
+        jcr:mixinTypes="[cq:LiveSync]"
         jcr:primaryType="cq:PageContent"
-        jcr:title="us"
-        sling:resourceType="foundation/components/redirect"/>
+        jcr:title="USA"
+        sling:resourceType="foundation/components/redirect"
+        hideInNav="{Boolean}true">
+        <cq:LiveSyncConfig
+            cq:isDeep="{Boolean}false"
+            cq:master="/content/geekstutorials/language-masters"
+            cq:rolloutConfigs="[/libs/msm/wcm/rolloutconfigs/default]"
+            jcr:primaryType="cq:LiveCopy"/>
+    </jcr:content>
     <en/>
+    <us-authors jcr:primaryType="nt:unstructured">
+        <AEM-Geeks-aemgeeks1212_x0040_gmail.com
+            jcr:primaryType="nt:unstructured"
+            books="[java,aem,c#]"
+            email="aemgeeks1212@gmail.com"
+            fname="AEM"
+            lname="Geeks"
+            phone="2322423432">
+            <photo/>
+        </AEM-Geeks-aemgeeks1212_x0040_gmail.com>
+        <Geeks-Tutorials-aemgeeks1212_x0040_gmail.com
+            jcr:primaryType="nt:unstructured"
+            books="[java,aem,c#]"
+            email="aemgeeks1212@gmail.com"
+            fname="Geeks"
+            lname="Tutorials"
+            phone="2322423432">
+            <photo/>
+        </Geeks-Tutorials-aemgeeks1212_x0040_gmail.com>
+    </us-authors>
 </jcr:root>

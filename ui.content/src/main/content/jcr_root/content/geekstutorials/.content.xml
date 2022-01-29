@@ -2,12 +2,14 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:allowedTemplates="[/conf/geekstutorials/settings/wcm/templates/(?!xf-).*]"
+        cq:allowedTemplates="[/conf/geekstutorials/settings/wcm/templates/(?!xf-).*,/apps/geekstutorials/templates/(?!xf-).*]"
         cq:conf="/conf/geekstutorials"
+        cq:lastModified="{Date}2022-01-06T01:59:27.213-05:00"
+        cq:lastModifiedBy="admin"
         jcr:primaryType="cq:PageContent"
         jcr:title="Geeks Tutorials"
         sling:configRef="/conf/geekstutorials"
-        sling:redirect="{Boolean}true"
+        sling:redirect="true"
         sling:redirectStatus="{Long}302"
         sling:resourceType="foundation/components/redirect"
         redirectTarget="/content/geekstutorials/us/en">

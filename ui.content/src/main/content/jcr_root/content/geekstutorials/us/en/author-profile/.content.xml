@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-01-26T12:44:53.853-05:00"
+        cq:lastModifiedBy="admin"
+        cq:lastRolledout="{Date}2022-01-26T12:44:53.855-05:00"
+        cq:lastRolledoutBy="admin"
+        cq:template="/apps/geekstutorials/templates/tutorials-home"
+        jcr:mixinTypes="[cq:LiveRelationship,cq:LiveSync]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Author Profile"
+        sling:resourceType="geekstutorials/components/structure/home">
+        <parsys
+            cq:lastRolledout="{Date}2022-01-26T12:44:53.850-05:00"
+            cq:lastRolledoutBy="admin"
+            jcr:mixinTypes="[cq:LiveRelationship]"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <authorprofile
+                cq:lastRolledout="{Date}2022-01-26T12:44:53.855-05:00"
+                cq:lastRolledoutBy="admin"
+                jcr:created="{Date}2022-01-13T12:38:20.812-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-01-26T12:44:53.852-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:mixinTypes="[cq:LiveRelationship]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="geekstutorials/components/custom/authorprofile"
+                action="/content/usergenerated/geekstutorials/us/en/author-profile/cq-gen1642095500837/"
+                actionType="foundation/components/form/actions/store"/>
+        </parsys>
+        <cq:LiveSyncConfig
+            cq:isDeep="{Boolean}true"
+            cq:master="/content/geekstutorials/language-masters/en/author-profile"
+            cq:rolloutConfigs="[/libs/msm/wcm/rolloutconfigs/default]"
+            jcr:primaryType="cq:LiveCopy"/>
+    </jcr:content>
+</jcr:root>

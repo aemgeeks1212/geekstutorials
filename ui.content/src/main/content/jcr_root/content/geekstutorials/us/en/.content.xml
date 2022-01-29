@@ -2,33 +2,49 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        jcr:mixinTypes="[cq:LiveRelationship]"
-        pageTitle="Geeks Tutorials"
-        jcr:primaryType="cq:PageContent"
-        jcr:title="en"
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2022-01-26T12:44:53.649-05:00"
+        cq:lastModifiedBy="admin"
+        cq:lastRolledout="{Date}2022-01-26T12:44:53.651-05:00"
+        cq:lastRolledoutBy="admin"
         cq:template="/conf/geekstutorials/settings/wcm/templates/page-content"
+        jcr:mixinTypes="[cq:LiveRelationship,cq:LiveSync]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="en"
         sling:resourceType="geekstutorials/components/page"
-    >
+        pageTitle="Geeks Tutorials">
         <root
+            cq:lastRolledout="{Date}2022-01-26T12:44:53.591-05:00"
+            cq:lastRolledoutBy="admin"
+            jcr:mixinTypes="[cq:LiveRelationship]"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="geekstutorials/components/container"
-             jcr:mixinTypes="[cq:LiveRelationship]"
             layout="responsiveGrid">
             <container
+                cq:lastRolledout="{Date}2022-01-26T12:44:53.596-05:00"
+                cq:lastRolledoutBy="admin"
+                jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
-             jcr:mixinTypes="[cq:LiveRelationship]"
                 sling:resourceType="geekstutorials/components/container">
                 <title
+                    cq:lastRolledout="{Date}2022-01-26T12:44:53.601-05:00"
+                    cq:lastRolledoutBy="admin"
+                    jcr:mixinTypes="[cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="geekstutorials/components/title"/>
                 <container
+                    cq:lastRolledout="{Date}2022-01-26T12:44:53.606-05:00"
+                    cq:lastRolledoutBy="admin"
+                    jcr:mixinTypes="[cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="geekstutorials/components/container"
                     layout="responsiveGrid">
                     <teaser
+                        cq:lastRolledout="{Date}2022-01-26T12:44:53.618-05:00"
+                        cq:lastRolledoutBy="admin"
                         jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
+                        jcr:mixinTypes="[cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Epic Journey"
                         sling:resourceType="geekstutorials/components/teaser"
@@ -36,15 +52,25 @@
                         descriptionFromPage="false"
                         textIsRich="true"
                         titleFromPage="false">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
+                        <cq:responsive
+                            cq:lastRolledout="{Date}2022-01-26T12:44:53.620-05:00"
+                            cq:lastRolledoutBy="admin"
+                            jcr:mixinTypes="[cq:LiveRelationship]"
+                            jcr:primaryType="nt:unstructured">
                             <default
+                                cq:lastRolledout="{Date}2022-01-26T12:44:53.625-05:00"
+                                cq:lastRolledoutBy="admin"
+                                jcr:mixinTypes="[cq:LiveRelationship]"
                                 jcr:primaryType="nt:unstructured"
                                 offset="0"
                                 width="4"/>
                         </cq:responsive>
                     </teaser>
                     <teaser_copy
+                        cq:lastRolledout="{Date}2022-01-26T12:44:53.631-05:00"
+                        cq:lastRolledoutBy="admin"
                         jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
+                        jcr:mixinTypes="[cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Epic Journey"
                         sling:resourceType="geekstutorials/components/teaser"
@@ -52,15 +78,25 @@
                         descriptionFromPage="false"
                         textIsRich="true"
                         titleFromPage="false">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
+                        <cq:responsive
+                            cq:lastRolledout="{Date}2022-01-26T12:44:53.632-05:00"
+                            cq:lastRolledoutBy="admin"
+                            jcr:mixinTypes="[cq:LiveRelationship]"
+                            jcr:primaryType="nt:unstructured">
                             <default
+                                cq:lastRolledout="{Date}2022-01-26T12:44:53.635-05:00"
+                                cq:lastRolledoutBy="admin"
+                                jcr:mixinTypes="[cq:LiveRelationship]"
                                 jcr:primaryType="nt:unstructured"
                                 offset="0"
                                 width="4"/>
                         </cq:responsive>
                     </teaser_copy>
                     <teaser_copy_1579324932
+                        cq:lastRolledout="{Date}2022-01-26T12:44:53.642-05:00"
+                        cq:lastRolledoutBy="admin"
                         jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
+                        jcr:mixinTypes="[cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Epic Journey"
                         sling:resourceType="geekstutorials/components/teaser"
@@ -68,14 +104,24 @@
                         descriptionFromPage="false"
                         textIsRich="true"
                         titleFromPage="false">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
+                        <cq:responsive
+                            cq:lastRolledout="{Date}2022-01-26T12:44:53.644-05:00"
+                            cq:lastRolledoutBy="admin"
+                            jcr:mixinTypes="[cq:LiveRelationship]"
+                            jcr:primaryType="nt:unstructured">
                             <default
+                                cq:lastRolledout="{Date}2022-01-26T12:44:53.648-05:00"
+                                cq:lastRolledoutBy="admin"
+                                jcr:mixinTypes="[cq:LiveRelationship]"
                                 jcr:primaryType="nt:unstructured"
                                 offset="0"
                                 width="4"/>
                         </cq:responsive>
                     </teaser_copy_1579324932>
                     <helloworld
+                        cq:lastRolledout="{Date}2022-01-26T12:44:53.650-05:00"
+                        cq:lastRolledoutBy="admin"
+                        jcr:mixinTypes="[cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="geekstutorials/components/helloworld"
                         text="lalala :)"/>
@@ -83,9 +129,13 @@
             </container>
         </root>
         <cq:LiveSyncConfig
-            cq:isDeep="{Boolean}true"
+            cq:isDeep="{Boolean}false"
             cq:master="/content/geekstutorials/language-masters/en"
             cq:rolloutConfigs="[/libs/msm/wcm/rolloutconfigs/default]"
             jcr:primaryType="cq:LiveCopy"/>
     </jcr:content>
+    <home/>
+    <add-authors/>
+    <all-authors/>
+    <author-profile/>
 </jcr:root>

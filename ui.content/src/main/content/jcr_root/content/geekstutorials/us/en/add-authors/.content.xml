@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-01-26T12:44:53.752-05:00"
+        cq:lastModifiedBy="admin"
+        cq:lastRolledout="{Date}2022-01-26T12:44:53.754-05:00"
+        cq:lastRolledoutBy="admin"
+        cq:template="/apps/geekstutorials/templates/tutorials-home"
+        jcr:mixinTypes="[cq:LiveRelationship,cq:LiveSync]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Add Authors"
+        sling:resourceType="geekstutorials/components/structure/home">
+        <parsys
+            cq:lastRolledout="{Date}2022-01-26T12:44:53.748-05:00"
+            cq:lastRolledoutBy="admin"
+            jcr:mixinTypes="[cq:LiveRelationship]"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <addauthor
+                cq:lastRolledout="{Date}2022-01-26T12:44:53.754-05:00"
+                cq:lastRolledoutBy="admin"
+                jcr:created="{Date}2022-01-06T02:02:37.794-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-01-26T12:44:53.750-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:mixinTypes="[cq:LiveRelationship]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="geekstutorials/components/custom/addauthor"
+                actionType="geekstutorials/components/form/actions/addauthor"
+                errorMessage="[,]"
+                externalServiceEndPointUrl="[,]"/>
+        </parsys>
+        <cq:LiveSyncConfig
+            cq:isDeep="{Boolean}true"
+            cq:master="/content/geekstutorials/language-masters/en/add-authors"
+            cq:rolloutConfigs="[/libs/msm/wcm/rolloutconfigs/default]"
+            jcr:primaryType="cq:LiveCopy"/>
+    </jcr:content>
+</jcr:root>
