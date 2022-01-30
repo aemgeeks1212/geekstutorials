@@ -60,6 +60,34 @@ public class AuthorServiceImpl implements AuthorService {
         return nodeCreated;
     }
 
+    @Override
+    public List<Map<String, String>> getAuthors(final String country) {
+        final List<Map<String, String>> authorList = new ArrayList<Map<String, String>>();
+        AuthorServiceConfig config = authorServiceConfig.getCountryConfig(country);
+        String nodeLocation = config.getNodePath() + "/" + config.getNodeName();
+        try {
+            ResourceResolver resolverResolver = ResolverUtil.newResolver(resourceResolverFactory);
+            Iterator<Resource> authors=resolverResolver.getResource(nodeLocation).listChildren();
+            while (authors.hasNext()){
+                Resource resource=authors.next();
+                Map<String,String> author=new HashMap<>();
+                ValueMap prop=resource.getValueMap();
+                author.put("fname",ServiceUtil.getProprty(prop,"fname"));
+                author.put("lname",ServiceUtil.getProprty(prop,"lname"));
+                author.put("email",ServiceUtil.getProprty(prop,"email"));
+                author.put("phone",ServiceUtil.getProprty(prop,"phone"));
+                author.put("books",Arrays.toString(prop.get("books",String[].class)));
+                author.put("booksCount",Integer.toString(prop.get("books",String[].class).length));
+                author.put("image", resource.getPath()+"/photo/image");
+                authorList.add(author);
+            }
+        } catch (Exception e) {
+            LOG.error("Occurred exception - {}", e.getMessage());
+        }
+
+        return authorList;
+    }
+
     private String addAuthor(Session session,SlingHttpServletRequest request,String nodeLocation){
       try {
           Node parentNode = session.getNode(nodeLocation);

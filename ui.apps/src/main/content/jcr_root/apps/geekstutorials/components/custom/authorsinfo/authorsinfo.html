@@ -1,7 +1,7 @@
 <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
-     <sly data-sly-call="${clientlib.css @ categories='geekstutorials.components.authorsinfo'}"/>
+    <sly data-sly-call="${clientlib.all @ categories='geekstutorials.components.authorsinfo'}"/>
 </sly>
-<!-- Basic Examples --> 
+<!-- Table -->
 <div data-sly-use.authors="com.geeks.aem.tutorials.core.models.AuthorsInfo"></div>
 
 <div class="row clearfix">
@@ -14,7 +14,7 @@
             </div>
             <div class="body">
                 <div class="table-responsive">
-                    <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
+                    <table class="table table-bordered table-striped table-hover geeks-table dataTable">
                         <thead>
                         <tr>
                             <th>First Name</th>
@@ -22,8 +22,7 @@
                             <th>Email</th>
                             <th>Phone</th>
                             <th>Books</th>
-                            <th>Profile</th>
-                           <!-- <th>Salary</th>-->
+                            <th>Details</th>
                         </tr>
                         </thead>
                         <tfoot>
@@ -33,21 +32,19 @@
                             <th>Email</th>
                             <th>Phone</th>
                             <th>Books</th>
-                            <th>Profile</th>
-                            <!--<th>Salary</th>-->
+                            <th>Details</th>
                         </tr>
                         </tfoot>
                         <tbody>
                         <div data-sly-list.item="${authors.authorsList}">
-                        <tr>
-							<td>${item.fname}</td>
-                            <td>${item.lname}</td>
-                            <td>${item.email}</td>
-                            <td>${item.phone}</td>
-                            <td>${item.booksCount}</td>
-                            <td><input type="button" class="btn btn-success waves-effect" onclick="location.href='${'/content/geekstutorials/us/en/author-profile.html?author=' @ context='scriptString'}${item.fname @ context='scriptString'}-${item.lname @ context='scriptString'}-${item.email @ context='scriptString'}'" value="Show"/></td>
-                            <!--<td>$170,750</td>-->
-                        </tr>
+                            <tr>
+                                <td>${item.fname}</td>
+                                <td>${item.lname}</td>
+                                <td>${item.email}</td>
+                                <td>${item.phone}</td>
+                                <td>${item.booksCount}</td>
+                                <td><input  disabled="disabled" type="button" class="btn btn-success waves-effect" onclick="location.href='${'/content/geekstutorials/us/en/author-profile.html?author=' @ context='scriptString'}${item.fname @ context='scriptString'}-${item.lname @ context='scriptString'}-${item.email @ context='scriptString'}'" value="Show"/></td>
+                            </tr>
                         </div>
                         </tbody>
                     </table>
@@ -56,7 +53,4 @@
         </div>
     </div>
 </div>
-<!-- #END# Basic Examples -->
-<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
-     <sly data-sly-call="${clientlib.js @ categories='geekstutorials.components.authorsinfo'}"/>
-</sly>
+<!-- #END# Table -->

@@ -43,18 +43,15 @@ public class AuthorsInfoImpl implements AuthorsInfo {
 
     private String country;
 
-/*    @Override
+    @Override
     public List<Map<String, String>> getAuthorsList() {
         List<Map<String, String>> authos=authorService.getAuthors(country);
-        LOG.info("\n SIZE - {} ",authos.size());
         return authos;
-    }*/
+    }
 
     @PostConstruct
     protected void init() throws LoginException {
        country=currentPage.getPath().split("/")[3];
-       LOG.info("\n Resource Path - {} ",resource.getPath());
-       LOG.info("\n Path Path - {} - {} ",country,currentPage.getPath());
     }
 
 }
