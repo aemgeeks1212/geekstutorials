@@ -40,5 +40,50 @@
             phone="2322423432">
             <photo/>
         </Geeks-Tutorials-aemgeeks1212_x0040_gmail.com>
+        <David-Gitt-david_x0040_gmail.com
+            jcr:primaryType="nt:unstructured"
+            books="[python,java]"
+            email="david@gmail.com"
+            fname="David"
+            lname="Gitt"
+            phone="1234567">
+            <photo/>
+        </David-Gitt-david_x0040_gmail.com>
+        <Mathu-Gitt-mathu_x0040_gmail.com
+            jcr:primaryType="nt:unstructured"
+            books="[python,java,jquery]"
+            email="mathu@gmail.com"
+            fname="Mathu"
+            lname="Gitt"
+            phone="1234567">
+            <photo/>
+        </Mathu-Gitt-mathu_x0040_gmail.com>
+        <Bruse-Glit-bruse.glit_x0040_gmail.com
+            jcr:primaryType="nt:unstructured"
+            books="[python,java,jquery,js]"
+            email="bruse.glit@gmail.com"
+            fname="Bruse"
+            lname="Glit"
+            phone="123456733">
+            <photo/>
+        </Bruse-Glit-bruse.glit_x0040_gmail.com>
+        <Kittu-k-kittu.k_x0040_gmail.com
+            jcr:primaryType="nt:unstructured"
+            books="[python,java,jquery,js]"
+            email="kittu.k@gmail.com"
+            fname="Kittu"
+            lname="k"
+            phone="123456733">
+            <photo/>
+        </Kittu-k-kittu.k_x0040_gmail.com>
+        <Arun-Yadav-arun.yadav_x0040_gmail.com
+            jcr:primaryType="nt:unstructured"
+            books="[python,java,jquery,js]"
+            email="arun.yadav@gmail.com"
+            fname="Arun"
+            lname="Yadav"
+            phone="983434343">
+            <photo/>
+        </Arun-Yadav-arun.yadav_x0040_gmail.com>
     </us-authors>
 </jcr:root>

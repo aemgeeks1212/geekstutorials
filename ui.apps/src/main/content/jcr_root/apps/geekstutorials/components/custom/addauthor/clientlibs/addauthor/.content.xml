@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    cq:lastReplicated="{Date}2022-02-03T15:23:43.495+05:30"
+    cq:lastReplicatedBy="admin"
+    cq:lastReplicationAction="Activate"
+    jcr:mixinTypes="[cq:ReplicationStatus]"
     jcr:primaryType="cq:ClientLibraryFolder"
+    allowProxy="{Boolean}true"
     categories="[geekstutorials.components.addauthor]"
     dependencies="[jquery,granite.csrf.standalone]"/>

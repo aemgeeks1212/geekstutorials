@@ -14,19 +14,20 @@ public @interface JSONCreatorConfig {
             name = "Scheduler name",
             description = "Name of the scheduler",
             type = AttributeType.STRING)
-    public String schedulerName() default "JSON Creator Scheduler Configuration";
+    public String schedulerName() default "GeeksTutorial_JSON_Creator";
 
     @AttributeDefinition(
             name = "Cron Expression",
             description = "Cron expression used by the scheduler",
             type = AttributeType.STRING)
-    public String cronExpression() default "0 0 12 1/1 * ? *"; // runs every 10 seconds
+    public String cronExpression() default "0 0 12 1/1 * ? *";
+
 
     @AttributeDefinition(
             name = "Countries",
             description = "Add countries for JSON Creation",
             type = AttributeType.STRING
     )
-    public String[] setCountries() default {"us","in"};;
+    public String[] setCountries() default {"us"};
 }
 

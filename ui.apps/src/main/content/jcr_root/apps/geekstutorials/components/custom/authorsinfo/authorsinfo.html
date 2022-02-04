@@ -43,7 +43,7 @@
                                 <td>${item.email}</td>
                                 <td>${item.phone}</td>
                                 <td>${item.booksCount}</td>
-                                <td><input  disabled="disabled" type="button" class="btn btn-success waves-effect" onclick="location.href='${'/content/geekstutorials/us/en/author-profile.html?author=' @ context='scriptString'}${item.fname @ context='scriptString'}-${item.lname @ context='scriptString'}-${item.email @ context='scriptString'}'" value="Show"/></td>
+                                <td><input type="button" class="btn btn-success waves-effect" onclick="location.href='${properties.profilepage @ context='text'}${'.html?author=' @ context='scriptString'}${item.fname @ context='scriptString'}-${item.lname @ context='scriptString'}-${item.email @ context='scriptString'}'" value="Profile"/></td>
                             </tr>
                         </div>
                         </tbody>

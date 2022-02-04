@@ -16,6 +16,14 @@
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                         fieldLabel="Text"
                         name="./text"/>
+                    <detail-page
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="cq/gui/components/coral/common/form/pagefield"
+                        fieldDescription="Select page to display profile information."
+                        fieldLabel="Profile Page"
+                        name="./profilepage"
+                        required="{Boolean}true"
+                        rootPath="/content"/>
                 </items>
             </column>
         </items>

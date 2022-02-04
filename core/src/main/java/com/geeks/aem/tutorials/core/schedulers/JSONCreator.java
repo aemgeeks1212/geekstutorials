@@ -38,17 +38,15 @@ public class JSONCreator implements Runnable {
     protected void addScheduler(JSONCreatorConfig config) {
         ScheduleOptions scheduleOptions = scheduler.EXPR(config.cronExpression());
         scheduleOptions.name(String.valueOf(schedulerId));
-        scheduler.schedule(this, scheduleOptions);
+        //scheduler.schedule(this, scheduleOptions);
 
-        //LOG.info("\n ---------Scheduler added----------");
-        /*ScheduleOptions scheduleOptionsNow = scheduler.NOW(3,5);
-        scheduler.schedule(this, scheduleOptionsNow);*/
+        ScheduleOptions scheduleOptionsNow = scheduler.NOW();
+        scheduler.schedule(this, scheduleOptionsNow);
     }
-   @Override
+    @Override
     public void run() {
        for(String country:countries){
            LOG.info("\n ====> COUNTRY - {} ",country);
        }
-
     }
 }

@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-01-26T12:44:53.801-05:00"
+        cq:lastModified="{Date}2022-02-04T21:09:12.098+05:30"
         cq:lastModifiedBy="admin"
         cq:lastRolledout="{Date}2022-01-26T12:44:53.803-05:00"
         cq:lastRolledoutBy="admin"
@@ -18,15 +18,17 @@
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/parsys">
             <authorsinfo
+                cq:isCancelledForChildren="{Boolean}true"
                 cq:lastRolledout="{Date}2022-01-26T12:44:53.803-05:00"
                 cq:lastRolledoutBy="admin"
                 jcr:created="{Date}2022-01-07T10:12:05.007-05:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2022-01-26T12:44:53.800-05:00"
+                jcr:lastModified="{Date}2022-02-04T21:09:11.889+05:30"
                 jcr:lastModifiedBy="admin"
-                jcr:mixinTypes="[cq:LiveRelationship]"
+                jcr:mixinTypes="[cq:LiveRelationship,cq:LiveSyncCancelled]"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="geekstutorials/components/custom/authorsinfo"/>
+                sling:resourceType="geekstutorials/components/custom/authorsinfo"
+                profilepage="/content/geekstutorials/us/en/author-profile"/>
         </parsys>
         <cq:LiveSyncConfig
             cq:isDeep="{Boolean}true"

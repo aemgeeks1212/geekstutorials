@@ -88,6 +88,23 @@ public class AuthorServiceImpl implements AuthorService {
         return authorList;
     }
 
+    @Override
+    public Resource getAuthorDetails(final String country,final String author) {
+        AuthorServiceConfig config = authorServiceConfig.getCountryConfig(country);
+        String nodeLocation = config.getNodePath() + "/" + config.getNodeName();
+        try {
+            ResourceResolver resolverResolver = ResolverUtil.newResolver(resourceResolverFactory);
+            LOG.info("\n ---resolver HIT ---> " + resolverResolver.getUserID());
+            Resource authorDetails=resolverResolver.getResource(nodeLocation+"/"+author);
+            return authorDetails;
+
+        } catch (Exception e) {
+            LOG.error("Occurred exception - {}", e.getMessage());
+        }
+
+        return null;
+    }
+
     private String addAuthor(Session session,SlingHttpServletRequest request,String nodeLocation){
       try {
           Node parentNode = session.getNode(nodeLocation);

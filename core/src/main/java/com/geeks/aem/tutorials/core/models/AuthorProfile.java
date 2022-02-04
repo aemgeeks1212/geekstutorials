@@ -9,4 +9,5 @@ public interface AuthorProfile {
     public String getEmail();
     public String getPhone();
     public List<String> getBooks();
+    public String getThumbnail();
 }
