@@ -94,7 +94,6 @@ public class AuthorServiceImpl implements AuthorService {
         String nodeLocation = config.getNodePath() + "/" + config.getNodeName();
         try {
             ResourceResolver resolverResolver = ResolverUtil.newResolver(resourceResolverFactory);
-            LOG.info("\n ---resolver HIT ---> " + resolverResolver.getUserID());
             Resource authorDetails=resolverResolver.getResource(nodeLocation+"/"+author);
             return authorDetails;
 
@@ -144,9 +143,6 @@ public class AuthorServiceImpl implements AuthorService {
         String lName=request.getParameter("lname");
         String email=request.getParameter("email");
         String[] books=request.getParameter("books").split(",");
-        for(String book:books){
-            //LOG.info("\n B - {} ",book);
-        }
         String authorNodeName=fName+"-"+lName+"-"+email;
         return authorNodeName;
     }

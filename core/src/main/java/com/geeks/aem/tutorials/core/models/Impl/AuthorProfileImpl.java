@@ -85,7 +85,6 @@ public class AuthorProfileImpl implements AuthorProfile {
 
     @PostConstruct
     protected void init(){
-        LOG.info("\n ----------------IN MODEL----------------");
         String country=currentPage.getPath().split("/")[3];
         String authorPath=request.getRequestParameter("author").getString();
         Resource author=authorService.getAuthorDetails(country,authorPath);
