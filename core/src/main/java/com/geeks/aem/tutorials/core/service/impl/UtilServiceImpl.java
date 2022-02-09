@@ -7,6 +7,7 @@ import org.apache.sling.api.resource.LoginException;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.api.resource.ResourceResolverFactory;
+import org.apache.sling.settings.SlingSettingsService;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 import org.slf4j.Logger;
@@ -23,6 +24,9 @@ public class UtilServiceImpl implements UtilService {
     @Reference
     ResourceResolverFactory resourceResolverFactory;
 
+    @Reference
+    SlingSettingsService slingSettingsService;
+
     @Override
     public String getActionURL(Resource resource) {
         String actionURL= StringUtils.EMPTY;
@@ -36,5 +40,15 @@ public class UtilServiceImpl implements UtilService {
         }
 
         return actionURL;
+    }
+
+    @Override
+    public boolean isPublish(){
+        return slingSettingsService.getRunModes().contains("publish");
+    }
+
+    @Override
+    public boolean isAuthor(){
+        return slingSettingsService.getRunModes().contains("author");
     }
 }

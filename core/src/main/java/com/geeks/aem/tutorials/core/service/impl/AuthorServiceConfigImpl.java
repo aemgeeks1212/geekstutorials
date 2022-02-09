@@ -81,6 +81,7 @@ public class AuthorServiceConfigImpl implements AuthorServiceConfig {
     public AuthorServiceConfig getCountryConfig(String countryCode) {
         for (AuthorServiceConfig confFact : configs) {
             if (StringUtils.equalsIgnoreCase(countryCode, confFact.getCountryCode())) {
+                LOG.info("\n CONFIG SERVICE - {} ",confFact.getCountryCode());
                 return confFact;
             }
         }

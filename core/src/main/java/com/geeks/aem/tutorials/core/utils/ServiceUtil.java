@@ -3,6 +3,8 @@ package com.geeks.aem.tutorials.core.utils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.ValueMap;
+import org.apache.sling.settings.SlingSettingsService;
+import org.osgi.service.component.annotations.Reference;
 
 public class ServiceUtil {
 
@@ -22,4 +24,5 @@ public class ServiceUtil {
         String country=request.getResource().getPath().split("/")[3];
         return country;
     }
+
 }

@@ -24,10 +24,17 @@ public @interface JSONCreatorConfig {
 
 
     @AttributeDefinition(
-            name = "Countries",
-            description = "Add countries for JSON Creation",
+            name = "Skip Sites",
+            description = "Add countries to exclude",
             type = AttributeType.STRING
     )
-    public String[] setCountries() default {"us"};
+    public String[] getSkipSites() default {"language-masters"};
+
+    @AttributeDefinition(
+            name = "Site Path",
+            description = "Add sites parent path",
+            type = AttributeType.STRING
+    )
+    public String getSiteParent() default "/content/geekstutorials";
 }
 
