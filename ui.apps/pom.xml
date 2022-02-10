@@ -116,12 +116,12 @@
             <version>${project.version}</version>
         </dependency>
 
-        <dependency>
+        <!--<dependency>
             <groupId>com.geeks.aem.tutorials</groupId>
             <artifactId>geekstutorials.ui.frontend</artifactId>
             <version>${project.version}</version>
             <type>zip</type>
-        </dependency>
+        </dependency>-->
 
         <dependency>
             <groupId>com.geeks.aem.tutorials</groupId>
