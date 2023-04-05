@@ -19,7 +19,7 @@
     <groupId>com.geeks.aem.tutorials</groupId>
     <artifactId>geekstutorials</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.1</version>
+    <version>1.0.0-SNAPSHOT</version>
     <description>Geeks Tutorials</description>
 
     <modules>

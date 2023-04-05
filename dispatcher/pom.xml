@@ -7,7 +7,7 @@
     <parent>
         <groupId>com.geeks.aem.tutorials</groupId>
         <artifactId>geekstutorials</artifactId>
-        <version>1.0.1</version>
+        <version>1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
