@@ -14,14 +14,12 @@
  |  See the License for the specific language governing permissions and
  |  limitations under the License.
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.geeks.aem.tutorials</groupId>
     <artifactId>geekstutorials</artifactId>
     <packaging>pom</packaging>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.1</version>
     <description>Geeks Tutorials</description>
 
     <modules>
@@ -52,6 +50,13 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <componentGroupName>Geeks Tutorials</componentGroupName>
     </properties>
+    
+    <scm>
+        <connection>scm:git:git@github.com:aemgeeks1212/geekstutorials.git</connection>
+        <developerConnection>scm:git:git@github.com:aemgeeks1212/geekstutorials.git</developerConnection>
+        <url>https://github.com/aemgeeks1212/geekstutorials.git</url>
+        <tag>v1.0.1</tag>
+    </scm>
 
     <build>
         <plugins>
@@ -61,9 +66,11 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.5.3</version>
                 <configuration>
+                    <checkModificationExcludes>pom.xml</checkModificationExcludes>
                     <scmCommentPrefix>[maven-scm] :</scmCommentPrefix>
+                    <tagNameFormat>v@{project.version}</tagNameFormat>
                     <preparationGoals>clean install</preparationGoals>
-                    <goals>install</goals>
+                    <goals>deploy</goals>
                     <releaseProfiles>release</releaseProfiles>
                 </configuration>
             </plugin>
