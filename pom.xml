@@ -19,7 +19,7 @@
     <groupId>com.geeks.aem.tutorials</groupId>
     <artifactId>geekstutorials</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.2</version>
     <description>Geeks Tutorials</description>
 
     <modules>
@@ -55,7 +55,7 @@
         <connection>scm:git:git@github.com:aemgeeks1212/geekstutorials.git</connection>
         <developerConnection>scm:git:git@github.com:aemgeeks1212/geekstutorials.git</developerConnection>
         <url>https://github.com/aemgeeks1212/geekstutorials.git</url>
-        <tag>v1.0.1</tag>
+        <tag>v1.0.2</tag>
     </scm>
 
     <build>
