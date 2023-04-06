@@ -22,7 +22,7 @@
     <parent>
         <groupId>com.geeks.aem.tutorials</groupId>
         <artifactId>geekstutorials</artifactId>
-        <version>1.0.5-SNAPSHOT</version>
+        <version>1.0.5</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
